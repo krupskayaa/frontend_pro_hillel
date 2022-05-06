@@ -19,4 +19,5 @@ function sum(start, end, step){
         return start + sum(start + step, end, step)
     }
 }
+
 console.log(sum(1, 5, 1));
