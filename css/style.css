@@ -1,0 +1,12 @@
+body {
+    background: #000000e3;
+}
+#block {
+    padding: 20px;
+    background: purple;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    font-size: 24px;
+    color: bisque;
+}
