@@ -12,18 +12,58 @@ var wrap = document.createElement('div');
 game.append(wrap);
 wrap.classList.add('game__wrap');
 
-
-
-function createBtn(tag, clName, text) {
+function createBtn(tag, clName) {
     var btn = document.createElement(tag);
     btn.className = clName;
-    btn.innerHTML = text;
-    btn.setAttribute('data-id', text);
     var wrap = document.querySelector('.game__wrap');
     wrap.append(btn);
 }
 
 for (var i = 0; i < field.length; i++) {
-    createBtn('button', 'btn', field[i])
+    createBtn('button', 'btn')
 }
 
+function move(e) {
+    var elem = e.target;
+    var check = elem.closest('.btn');
+    if (check) {
+        if (counter % 2 === 0) {
+            elem.innerHTML = '0';
+        } else {
+            elem.innerHTML = 'x';
+        }
+    }
+}
+
+var btns = document.querySelectorAll('.btn');
+btns.forEach(function(btn){
+    btn.addEventListener('click', move);
+})
+
+var counter = 1;
+
+// var btns = document.querySelectorAll('.btn');
+// document.addEventListener('click', function (e){
+//     var elem = e.target;
+//     var check = elem.matches('.btn');
+//     if (check) {
+//         console.log(elem.dataset.id)
+//     }
+// })
+
+
+// function move(e) {
+//     var elem = e.target;
+//     var check = elem.closest('.btn');
+//     if (check) {
+//         if (ships.includes(elem.dataset.id)) {
+//             alert('Попал!');
+//             elem.style.background = "green";
+//             elem.removeEventListener('click', move);
+//         } else if (check && !ships.includes(elem.dataset.id)) {
+//             alert('Мимо!');
+//             elem.style.background = "red";
+//             elem.removeEventListener('click', move);
+//         }     
+//     }
+// }
