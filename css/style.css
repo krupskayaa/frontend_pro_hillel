@@ -1,0 +1,34 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgba(76, 27, 102, 0.89);
+}
+.btn {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: #e8b9f7;
+    border: 1px solid rgb(76, 27, 102, 0.89);
+    color: #60006d;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+.game__title {
+    text-align: center;
+    color: #ffffffe3;
+    font-size: 42px;
+    margin: 20px 0;
+}
+.game__wrap {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background: rgb(232, 164, 241);
+    box-shadow: 10px 10px 10px 10px rgba(72, 6, 75, 0.1);
+}
