@@ -18,18 +18,15 @@ for (var i = 0; i < field.length; i++) {
 
 function shot(e) {
     var elem = e.target;
-    var check = elem.closest('.btn');
-    if (check) {
-        if (ships.includes(elem.dataset.id)) {
-            alert('Попал!');
-            elem.style.background = "green";
-            elem.removeEventListener('click', shot);
-        } else if (check && !ships.includes(elem.dataset.id)) {
-            alert('Мимо!');
-            elem.style.background = "red";
-            elem.removeEventListener('click', shot);
-        }     
-    }
+    if (ships.includes(elem.dataset.id)) {
+        alert('Попал!');
+        elem.style.background = "green";
+        elem.removeEventListener('click', shot);
+    } else {
+        alert('Мимо!');
+        elem.style.background = "red";
+        elem.removeEventListener('click', shot);
+    }     
 }
 
 var btns = document.querySelectorAll('.btn');
