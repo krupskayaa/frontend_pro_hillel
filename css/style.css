@@ -16,9 +16,6 @@ body {
     text-transform: uppercase;
     margin: 5px;
 }
-span {
-    background: #f5c05f;
-}
 .wrap {
     width: 660px;
     padding: 10px;
@@ -26,9 +23,4 @@ span {
     align-items: flex-start;
     flex-wrap: wrap;
     background: #000;
-}
-.block {
-    width: 100px;
-    height: 100px;
-    background: pink;
 }
