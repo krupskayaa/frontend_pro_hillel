@@ -2,23 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-style: normal;
-    font-weight: bold;
 }
 body {
     background: rgb(2, 15, 2);
 }
 .tank{
-    width: 100px;
-    height: 40px;
+    width: 224px;
+    height: 90px;
     position: absolute;
     left: 0;
     top: 0;
 }
 .bullet {
-    width: 30px;
+    width: 60px;
     position: absolute;
-    top: 13px;
-    transform: rotate(180deg)
+    top: 0;
+    left: 0;
+}
+.fire {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
