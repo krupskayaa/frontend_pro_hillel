@@ -34,7 +34,6 @@ var stopWatch = setInterval (function () {
     var difference = new Date(currentDate - initialDate);
     var seconds = difference.getSeconds();
     var minutes = difference.getMinutes();
-    console.log(seconds, minutes)
     if(minutes < 10) {
         minutes = '0' + minutes;
     }
@@ -71,7 +70,6 @@ function setObjectCoordinates(object, l, t, position) {
 }
 
 var check = setInterval(function() {
-
     if(checkCoordination(mouse, cat)) {
         finishGame();
     }
