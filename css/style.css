@@ -1,0 +1,19 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    display: block;
+    margin-top: 5px;
+}
+label {
+    margin: 10px 0;
+}
