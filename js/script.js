@@ -27,7 +27,6 @@ const bike = {
 
 const bikeMountains = {
     type: 'mountain bike',
-    seats: 1,
     shockAbsorber: true,
     abilityСlimbMountains: function () {
         return `I am a ${this.type}, I can ride mountains`;
@@ -37,7 +36,6 @@ const bikeMountains = {
 
 const bikeRoad = {
     type: 'road bike',
-    seats: 1,
     abilityDriveRoads: function () {
         return `I am a ${this.type}, I can drive fast on good roads`;
     },
@@ -52,6 +50,7 @@ const motorbike = {
     wheels: 2,
     engine: true,
     trunk: true,
+    engineSize: 150,
     __proto__: transport,
 }
 
@@ -68,7 +67,6 @@ const motorbikeSport = {
 const motorbikeTurist = {
     type: 'turist motorbike',
     weight: 250,
-    engineSize: 150,
     seat: 1,
     thermalControl: true,
     longDistanceAbility: function () {
