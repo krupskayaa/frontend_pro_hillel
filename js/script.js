@@ -1,1 +1,1 @@
-console.log('alyona')
+new Game().start()
