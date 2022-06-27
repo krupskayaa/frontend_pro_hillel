@@ -30,11 +30,8 @@ btn.innerHTML = 'GO'
 container.append(btn);
 
 let randomInt = 1;
-let fishkaPosition = 0;
 let step = 110;
-var style = parseInt(getComputedStyle(fishka).left);
 
-console.log(style)
 const setCubeNumber = () => {
     cube.src = `img/${randomInt}.png`;
 }
@@ -46,8 +43,13 @@ let getRandomInt = (min, max) => {
 
 const click = () => {
     getRandomInt(1, 6);
-    console.log(style + randomInt * step + 'px');
-    fishka.style.left = style + randomInt * step + 'px'};
-    console.log(fishka.style.left)
+    var style = parseInt(getComputedStyle(fishka).left);
+    if(style + randomInt * step >= 900) {
+        alert('Game over');
+        btn.removeEventListener('click', click);
+    } else {
+        fishka.style.left = style + randomInt * step + 'px';
+    }
+};
 
 btn.addEventListener('click', click);
