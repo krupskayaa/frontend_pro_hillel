@@ -9,23 +9,16 @@ titleYour.innerText = 'Make your choice:';
 titleYour.classList.add('title', 'title-your');
 body.prepend(titleYour);
 
-let stone = document.createElement('img');
-stone.src = "img/stone.png";
-stone.classList.add('hand', 'wrap-hands__stone');
-stone.setAttribute('data-id', 'stone');
-wrap.append(stone);
-
-let scissors = document.createElement('img');
-scissors.src = "img/scissors.png";
-scissors.classList.add('hand', 'wrap-hands__scissors');
-scissors.setAttribute('data-id', 'scissors');
-wrap.append(scissors);
-
-let paper = document.createElement('img');
-paper.src = "img/paper.png";
-paper.classList.add('hand', 'wrap-hands__paper');
-paper.setAttribute('data-id', 'paper');
-wrap.append(paper);
+generateElem = (name) => {
+    let elem = document.createElement('img');
+    elem.src = `img/${name}.png`;
+    elem.classList.add('hand');
+    elem.setAttribute('data-id', `${name}`);
+    wrap.append(elem);
+}
+generateElem('stone');
+generateElem('scissors');
+generateElem('paper');
 
 let titleComp = document.createElement('h2');
 titleComp.innerText = 'Computer:';
@@ -59,14 +52,14 @@ const choiceComp = () => {
     else if (computerChoice == 1) {
         computerChoice = 'scissors';
     }
-    else if(computerChoice == 2) {
+    else if (computerChoice == 2) {
         computerChoice = 'paper';
     }
     return computerChoice;
 }
 
 const appearCompChoice = () => {
-    if(!imgCompChoice) {
+    if (!imgCompChoice) {
         imgCompChoice = document.createElement('img');
         computer.append(imgCompChoice);
     }
