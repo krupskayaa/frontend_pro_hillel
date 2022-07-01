@@ -1,0 +1,91 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #12103c;
+}
+
+.title {
+    color: white;
+    font-size: 37px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #191750;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #191750;
+}
+
+form input {
+    border: none;
+    background-color: #2f3d6e;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 60%;
+}
+
+form button {
+    border: none;
+    color: white;
+    background-color: #1dd2af;
+    font-size: 25px;
+    font-weight: bold;
+    height: 42px;
+    width: 10%;
+}
+
+ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #12103c;
+    border-bottom: 1px solid #3a4674;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-check {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border: none;
+    padding: 5px;
+    color: #12103c;
+    font-weight: bold;
+}
+
+.task {
+    color: white;
+    font-size: 18px;
+}
+
+.complete-btn {
+    color: rgba(151, 151, 151, 0.8);
+    background-color: rgb(218, 218, 218);
+}
+
+.complete-p {
+    color: rgba(150, 150, 150, 0.8);
+    text-decoration: line-through;
+}
