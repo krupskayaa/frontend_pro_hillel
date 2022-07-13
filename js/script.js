@@ -130,7 +130,6 @@ const apiRequest = () => {
                     })
                 })
             }
-            console.log(results)
             results.forEach(el => {
                 const pokemonClass = favourites.includes(el.name) ?
                     'selected-pokemon' :
