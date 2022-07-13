@@ -130,6 +130,7 @@ const apiRequest = () => {
                     })
                 })
             }
+            console.log(results)
             results.forEach(el => {
                 const pokemonClass = favourites.includes(el.name) ?
                     'selected-pokemon' :
@@ -154,7 +155,8 @@ const apiRegion = () => {
                         .then(res => res.json())
                         .then(res => {
                             const { pokedexes } = res;
-                            fetch(pokedexes[0].url)
+                            if(pokedexes.length > 0) {
+                                fetch(pokedexes[0].url)
                                 .then(res => res.json())
                                 .then(res =>{
                                     const { pokemon_entries } = res;
@@ -163,7 +165,7 @@ const apiRegion = () => {
                                     pokemons.slice(0, pagination.limit-1).forEach(el => {
                                         const { pokemon_species } = el;
                                         const { name } = pokemon_species;
-                                        const pokemonClass = favourites.includes(el.name) ?
+                                        const pokemonClass = favourites.includes(name) ?
                                             'selected-pokemon' :
                                             'pokemon';
 
@@ -186,7 +188,7 @@ const apiRegion = () => {
                                             pokemons.slice(start, end).forEach(el => {
                                                 const { pokemon_species } = el;
                                                 const { name } = pokemon_species;
-                                                const pokemonClass = favourites.includes(el.name) ?
+                                                const pokemonClass = favourites.includes(name) ?
                                                     'selected-pokemon' :
                                                     'pokemon';
 
@@ -195,7 +197,10 @@ const apiRegion = () => {
                                         })
                                     })
                                 })
-                            
+                            } else {
+                                wrapper.innerHTML = `<p>No pokemon of this region :(</p>`
+                                wrapperPaginat.innerHTML = ''
+                            }
                         });
                 })
             })
@@ -225,7 +230,7 @@ const apiTypes = () => {
                                 pokemons.slice(0, pagination.limit-1).forEach(el => {
                                     const { pokemon } = el;
                                     const { name } = pokemon;
-                                    const pokemonClass = favourites.includes(el.name) ?
+                                    const pokemonClass = favourites.includes(name) ?
                                         'selected-pokemon' :
                                         'pokemon';
 
@@ -251,7 +256,7 @@ const apiTypes = () => {
                                     pokemons.slice(start, end).forEach(el => {
                                         const { pokemon } = el;
                                         const { name } = pokemon;
-                                        const pokemonClass = favourites.includes(el.name) ?
+                                        const pokemonClass = favourites.includes(name) ?
                                             'selected-pokemon' :
                                             'pokemon';
 
