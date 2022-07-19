@@ -110,7 +110,7 @@ $(document).ready(function (){
     $('.roll').on('click', spinBaraban);
 
     const enterLetter = () => {
-        let enterLetter = $('.myLetter').val();
+        let enterLetter = $('.myLetter').val().toLowerCase();
         if(enterLetter != '') {
             if($('.itemLetter').text().includes(enterLetter)) {
                 $('.yakubovichSay').text('Такая буква уже была.');
