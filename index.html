@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <title>Поле Чудес!</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
-    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <ul class="wrapLetters">
-        <li class="itemLetter"></li>
-    </ul>
-    <div class="wrapBaraban">
-        <p class="score">0</p>
-        <img src="./img/foto.png" alt="baraban" class="baraban">
-        <a href="#" class="roll"></a>
+    <div class="game">
+        <ul class="wrapLetters">
+            <!-- <li class="itemLetter"></li> -->
+        </ul>
+        <div class="wrapBaraban">
+            <p class="score">0</p>
+            <img src="./img/foto.png" alt="baraban" class="baraban">
+            <a href="#" class="roll"></a>
+        </div>
+        <p class="wrapQuest">
+        Что в России на первом месте, а во Франции на втором?
+        </p>
+        <div class="contEnter">
+            <input type="text" class="myLetter" placeholder="Введите букву">
+            <a href="#" class="send">Назвать букву</a>
+        </div>
+        <div class="persone">
+            <p class="yakubovichSay">Крутите барабан</p>
+        </div>
+        <p class="timer">10</p>
     </div>
-    <p class="wrapQuest">
-    Что в России на первом месте, а во Франции на втором?
-    </p>
-    <div class="contEnter">
-        <input type="text" class="myLetter" placeholder="Введите букву">
-        <a href="#" class="send">Назвать букву</a>
-    </div>
-    <div class="persone">
-        <p class="yakubovichSay">Крутите барабан</p>
-    </div>
-    <p class="timer">10</p>
 </body>
 </html>
