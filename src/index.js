@@ -4,7 +4,7 @@ import { MDCDataTable } from '@material/data-table';
 import students from "../students.json";
 import Chart from 'chart.js/auto';
 
-let wrapper = document.querySelector('.wrapper-all')
+let wrapper = document.querySelector('.wrapper-all');
 
 const createElem = (tag, append, text = null, clName) => {
   let el = document.createElement(tag);
@@ -13,7 +13,7 @@ const createElem = (tag, append, text = null, clName) => {
   }
   el.classList.add(clName);
   append.prepend(el);
-}
+};
 
 createElem('div', wrapper, `
 <div class="mdc-data-table">
@@ -64,4 +64,4 @@ new Chart(ctx, {
       data: rating,
     }]
   }
-})
+});
