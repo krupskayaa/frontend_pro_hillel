@@ -4,7 +4,7 @@ const createElem = (tag, append, text = null, clName) => {
     el.innerHTML = text;
   }
   el.classList.add(clName);
-  append.prepend(el);
+  append.append(el);
   return el;
 };
 

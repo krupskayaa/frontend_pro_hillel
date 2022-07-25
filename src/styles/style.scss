@@ -5,3 +5,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+.wrapper {
+    max-width: 770px;
+    display: flex;
+    align-items: flex-start;
+}

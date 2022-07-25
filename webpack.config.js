@@ -32,17 +32,10 @@ module.exports = {
                 use: [
                     production ? miniCss.loader : 'style-loader',
                     {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            sourceMap: !production
-                        }
+                        loader: 'css-loader'
                     },
                     {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: !production
-                        }
+                        loader: 'sass-loader'
                     }
                 ]
             },

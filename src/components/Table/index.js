@@ -4,9 +4,9 @@ import { createElem } from '../../helper/createElem';
 import moment from 'moment';
 
 const makeTable = () => {
-    let wrapper = document.querySelector('.wrapper-all');
+    let root = document.getElementById('root');
 
-    createElem('div', wrapper, `
+    createElem('div', root, `
     <div class="mdc-data-table">
     <div class="mdc-data-table__table-container">
         <table class="mdc-data-table__table" aria-label="Students">

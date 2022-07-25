@@ -70,29 +70,5 @@
     "name": "Richard Cline",
     "birthday": "19-07-1991",
     "rating": "22"
-  },
-  {
-    "id": "62dd0a8c519a0a5d7da379dd",
-    "name": "Dee Ashley",
-    "birthday": "11-05-1992",
-    "rating": "97"
-  },
-  {
-    "id": "62dd0a8c50efe20f50bba8ee",
-    "name": "Brandi Rocha",
-    "birthday": "29-12-1989",
-    "rating": "9"
-  },
-  {
-    "id": "62dd0a8cfbfd5bcf8bd7396b",
-    "name": "Dominguez Nunez",
-    "birthday": "01-03-1992",
-    "rating": "27"
-  },
-  {
-    "id": "62dd0a8c58db62c7ef0a3205",
-    "name": "Mack Holland",
-    "birthday": "08-09-1988",
-    "rating": "82"
   }
 ]
