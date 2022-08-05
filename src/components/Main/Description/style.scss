@@ -1,0 +1,98 @@
+.description {
+    background-image: url(../../../img/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 98px;
+    &__slide {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 20px -8px rgba(68, 88, 104, 0.25);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__chair-blur {
+        position: absolute;
+        right: 212px;
+        top: 112px;
+    }
+    &__wrapper-all {
+        display: flex;
+        padding: 29px 0 10px 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 56px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 54px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: #2B3350;
+        max-width: 601px;
+    }
+    &__txt {
+        font-size: 21px;
+        line-height: 160%;
+        color: #2B3350;
+        margin: 21px 0 32px 0;
+        max-width: 544px;
+    }
+    &__btn-main {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        background: #0074D4;
+        box-shadow: 0px 12.9632px 15.375px rgba(0, 116, 212, 0.241), 0px 5.38427px 6.38599px rgba(0, 116, 212, 0.15), 0px 1.94738px 2.30969px rgba(0, 116, 212, 0.059);
+        border-radius: 8px;
+        padding: 26px 50px 29px 50px;
+        cursor: pointer;
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+    &__dot-wrap {
+        padding: 0 7px;
+    }
+    &__btn-circle {
+        cursor: pointer;
+        width: 1px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #505050;
+        opacity: 0.2;
+        border: none;
+        font-size: 0;
+    }
+}
+
+.slide-left {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-right {
+    position: absolute;
+    left: 94%;
+    top: 50%;
+    transform: translateY(-50%);
+}
