@@ -1,6 +1,5 @@
 .nav {
     background: #FFFFFF;
-    border: 2px solid #F7F7F7;
     position: absolute;
     left: 0;
     top: 0;
@@ -10,7 +9,6 @@
 }
 
 .link {
-    /* font-weight: 500; */
     font-size: 22px;
     line-height: 18px;
     color: #bf6ccc;
