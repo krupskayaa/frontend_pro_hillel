@@ -1,0 +1,16 @@
+.basket {
+    margin-bottom: 50px;
+    &__all {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 140%;
+        text-align: right;
+        letter-spacing: -0.05em;
+        color: #2B3350;
+        margin: 20px 187px 0 0;
+    }
+    .all-line {
+        text-decoration: line-through 3px rgb(245, 77, 53);
+        margin: 0 12px;    
+    }
+}

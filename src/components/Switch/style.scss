@@ -1,0 +1,15 @@
+.switch {
+    margin: 28px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        font-size: 15px;
+        line-height: 150%;
+        color: #576077;
+    }
+    .active {
+        color: #959AAE;
+    }
+}

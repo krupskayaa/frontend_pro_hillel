@@ -1,7 +1,8 @@
-import Main from "../views/Main"
-// import Product from "../views/product"
-// import Catalog from "../views/catalog"
-// import Basket from "../views/basket"
+import Error from "../views/Error";
+import Main from "../views/Main";
+import Catalog from "../views/Catalog";
+import Product from "../views/Product"
+import Basket from "../views/Basket"
 const onHandleRoute = (e) => {
     e = e || e.window;
     e.preventDefault();
@@ -10,18 +11,19 @@ const onHandleRoute = (e) => {
 }
 
 const routes = {
-    '/': Main
-    // '/about-product': Product,
-    // '/basket': Basket,
-    // '/catalog': Catalog,
+    '404': Error,
+    '/': Main,
+    '/catalog': Catalog,
+    '/product': Product,
+    '/basket': Basket,
 }
 
 const onLocation = () => {
-    const { pathname } = window.location;
-    const route = routes[pathname] || routes[404];
-    const main = document.getElementById('main');
+    const { pathname } = window.location
+    const route = routes[pathname] || routes[404]
+    const main = document.getElementById('main')
     main.innerHTML = '';
-    route();
+    route()
 }
 
 window.onpopstate = onLocation;

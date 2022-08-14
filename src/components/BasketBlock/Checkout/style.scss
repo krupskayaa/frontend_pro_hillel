@@ -1,0 +1,15 @@
+.checkout {
+    &__wrapper {
+        max-width: 985px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 130%;
+        color: #959AAE;
+        max-width: 545px;
+        margin-left: 22px;
+    }
+}

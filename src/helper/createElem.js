@@ -4,7 +4,7 @@ const createElem = (tag, clas = null, text = null, append, attr1 = null, attr2 =
         el.className = clas;
     }
     if (text) {
-        el.textContent = text;
+        el.innerHTML = text;
     }
     append.append(el);
     if (attr1) {
@@ -12,4 +12,9 @@ const createElem = (tag, clas = null, text = null, append, attr1 = null, attr2 =
     }
     return el;
 }
-export { createElem }
+
+const createBtn = (clas, text) => {
+    return `<button class=${clas} type="button">${text}</button>`
+}
+
+export { createElem, createBtn }

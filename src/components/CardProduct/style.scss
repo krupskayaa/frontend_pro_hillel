@@ -1,0 +1,118 @@
+.product {
+    margin-bottom: 61px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        width: 632px;
+        height: 632px;
+        background: #FFFFFF;
+        border: 1px solid #E7EAEF;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #2B3350;
+        margin-bottom: 8px;
+        max-width: 463px;
+    }
+    &__chair-about {
+        font-size: 18px;
+        line-height: 150%;
+        color: #576077;
+        margin-bottom: 24px;
+        max-width: 495px;
+    }
+    &__chair-type {
+        font-size: 17px;
+        line-height: 150%;
+        color: #959AAE;
+        margin-top: 24px;
+    }
+    &__chair-price-old {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: -0.05em;
+        color: #2B3350;
+        text-decoration: line-through 3px rgb(245, 77, 53);    
+    }
+    &__chair-price-new {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 120%;
+        color: #2B3350;
+    }
+    &__wrapper-opt {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+    }
+    &__description-more {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 55px;
+        border-bottom: 1px solid #E7EAEF;
+    }
+    &__title-small {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        color: #2B3350;
+        margin-bottom: 11px;
+    }
+    &__text-about {
+        font-size: 16px;
+        line-height: 160%;
+        color: #576077;
+        margin-bottom: 12px;
+        width: 531px;
+    }
+    &__link-more {
+        font-size: 16px;
+        line-height: 160%;
+        color: #0074D4;
+        margin-bottom: 12px;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-image: url("../../img/arrow-bottom.svg");
+            background-repeat: no-repeat;
+            left: 95px;
+        }
+    }
+    &__feature {
+        font-size: 16px;
+        line-height: 160%;
+        color: #576077;
+    }
+    // &__col1 {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-around;
+    // }
+    &__col2 {
+        width: 426px;
+    }
+    &__description-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 8px;
+        margin-bottom: 16px;
+    }
+    .feature-answer {
+        color: #2B3350;
+    }
+
+}

@@ -1,0 +1,12 @@
+.catalog {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title-small {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: #2B3350;
+    }
+}

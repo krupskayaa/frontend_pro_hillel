@@ -20,6 +20,10 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #959AAE;
+            pointer-events: none;
+        }
+        &-svg {
+            pointer-events: none;
         }
     }
     &__input {

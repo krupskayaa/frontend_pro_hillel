@@ -8,7 +8,7 @@ const Header = () => {
                 <div class='header__info1'>
                     <div class="header__wrapper-logo">
                         <a class="header__logo" href='/'>
-                            <svg width="184" height="30" viewBox="0 0 184 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg class="header__logo-svg" width="184" height="30" viewBox="0 0 184 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path d="M37 6H184V28H37V6Z" fill="url(#pattern0)"/>
                                 <path d="M0 0H30V30H0V0Z" fill="url(#pattern1)"/>
                                 <defs>
@@ -40,7 +40,7 @@ const Header = () => {
                             </clipPath>
                             </defs>
                         </svg>
-                        <a class="header__phone phone" href="++380954235495">+380 95-423-54-95</a>
+                        <a class="header__phone phone" href="tel:+380954235495">+380 95-423-54-95</a>
                     </div>
                     <button type='button' class='header__button button'>Заказать звонок</button>
                 </div>
@@ -51,7 +51,7 @@ const Header = () => {
                                 <a class='header__link link-catalog' href='/catalog'>Каталог</a>
                             </li>
                             <li class='header__wrap-list'>
-                                <a class='header__link link-about' href='/about'>О продукте</a>
+                                <a class='header__link link-product' href='/product'>О продукте</a>
                             </li>
                             <li class='header__wrap-list'>
                                 <a class='header__link link-reviews' href='/reviews'>Отзывы</a>
@@ -100,8 +100,18 @@ const Header = () => {
     let root = document.getElementById('root');
     root.innerHTML = header;
 
-    let main = document.querySelector('.header__logo');
-    main.addEventListener('click', onHandleRoute);
+
+    let links = document.querySelectorAll('.header__link');
+    links.forEach((el) => {
+        el.addEventListener('click', onHandleRoute);
+    });
+
+    const click = (clas) => {
+        let el = document.querySelector(clas);
+        el.addEventListener('click', onHandleRoute);
+    }
+    click('.header__basket-link');
+    click('.header__logo');
 }
 
 export default Header;

@@ -1,0 +1,45 @@
+.catalog{
+    &__filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 120%;
+        color: #2B3350;
+        text-align: center;
+    }
+    &__filters-wrapper {
+        width: 280px;
+        height: 60px;
+        border: #E7EAEF solid 1px;
+        border-radius: 8px;
+    }
+    &__filters-title {
+        color: #959AAE;
+        font-size: 14px;
+        position: relative;
+        top: -11px;
+        left: 25px;
+        background-color: white;
+    }
+    &__filters-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.catalog__filters-area select {
+    font-size: 14px;
+        font-weight: bold;
+        color: #2B3350;
+        border: none;
+        width: 70%;
+        height: 30px;
+        margin-left: 10px;
+}

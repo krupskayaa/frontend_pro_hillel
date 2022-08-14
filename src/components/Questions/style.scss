@@ -1,0 +1,79 @@
+.questions {
+    background-color: #2B3350;
+    box-shadow: 0px 36px 84px -24px rgba(43, 51, 80, 0.5);
+    border-radius: 16px;
+    background-size: cover;
+    max-width: 1830px;
+    margin: 0 auto;
+    padding: 136px 0 147px 0;
+    position: relative;
+    bottom: -150px;
+    &__wrapper {
+        position: relative;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 150%;
+        color: #FFFFFF;
+        max-width: 584px;
+        margin: 9px 0 29px 0;
+    }
+    input {
+        width: 423px;
+        height: 81px;
+        padding: 15px 15px 15px 60px;
+        background-color: #576077;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 6px 16px rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__input-name, &__input-phone {
+        position: relative;
+    }
+    &__input-name::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../../img/user.svg);
+        background-size: cover;
+        position: absolute;
+        left: 20px;
+        top: 29px;
+    }
+    &__input-phone::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../../img/phone-incoming.svg);
+        background-size: cover;
+        position: absolute;
+        left: 20px;
+        top: 29px;
+    } 
+    input.questions__phone::placeholder {
+        color: white;
+    }
+    input.questions__name::placeholder {
+        color: white;
+    }
+    .btn-blue {
+        padding: 27px 74px;
+        z-index: 1;
+    }
+    &__img {
+        position: absolute;
+        bottom: -168px;
+        left: 553px;
+        z-index: 1;
+    }
+}
