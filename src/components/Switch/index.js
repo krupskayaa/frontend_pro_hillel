@@ -6,7 +6,7 @@ const Switch = (product = false, text, href) => {
     if(product) {
         elem = `<div class="container">
             <div class="switch__wrapper">
-                <a class="switch__link" href="/">Главная</a>
+                <a class="switch__link link-route" href="/">Главная</a>
                 ${IconDesign()}
                 <a class="switch__link link-route" href=${href}>${text}</a>
                 ${IconDesign()}
@@ -16,7 +16,7 @@ const Switch = (product = false, text, href) => {
     } else {
         elem = `<div class="container">
         <div class="switch__wrapper">
-            <a class="switch__link" href="/">Главная</a>
+            <a class="switch__link link-route" href="/">Главная</a>
             ${IconDesign()}
             <a class="switch__link active link-route" href="${href}">${text}</a>
         </div>

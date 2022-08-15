@@ -24,24 +24,7 @@ const Description = () => {
     <button class="description__slide slide-right"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1L7 7L1 13" stroke="#576077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>                        
-    </button>
-    <ul class="description__dots">
-        <li class="description__dot-wrap">
-            <button class="description__btn-circle" type="button" aria-label="button-slider">1</button>
-        </li>
-        <li class="description__dot-wrap">
-            <button class="description__btn-circle" type="button" aria-label="button-slider">2</button>
-        </li>
-        <li class="description__dot-wrap">
-            <button class="description__btn-circle" type="button" aria-label="button-slider">3</button>
-        </li>
-        <li class="description__dot-wrap">
-            <button class="description__btn-circle" type="button" aria-label="button-slider">3</button>
-        </li>
-        <li class="description__dot-wrap">
-            <button class="description__btn-circle" type="button" aria-label="button-slider">3</button>
-        </li>
-    </ul>`
+    </button>`
 
     let wrap = document.querySelector('.description');
     wrap.innerHTML = description;
