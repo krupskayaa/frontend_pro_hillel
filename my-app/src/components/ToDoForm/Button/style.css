@@ -1,0 +1,9 @@
+.to-do_btn {
+    border: none;
+    color: white;
+    background-color: #1dd2af;
+    font-size: 25px;
+    font-weight: bold;
+    height: 42px;
+    width: 10%;
+}
