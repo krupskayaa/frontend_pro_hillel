@@ -1,9 +1,10 @@
-.to-do_title {
+.to-do__title {
     color: white;
-    font-size: 37px;
+    font-size: 32px;
     padding: 10px 0;
     text-align: center;
     background-color: #191750;
     font-weight: bold;
     padding: 25px 0;
+    text-transform: uppercase;
 }

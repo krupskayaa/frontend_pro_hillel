@@ -1,0 +1,6 @@
+.to-do__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #191750;
+}

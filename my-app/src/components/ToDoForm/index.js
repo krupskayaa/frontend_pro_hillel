@@ -1,6 +1,6 @@
 import "./style.css";
-import Input from "./Input";
-import Button from "./Button";
+import Input from "../Input";
+import Button from "../Button";
 import React, { useState } from "react";
 
 function ToDoForm({todos, setTodos}) {
@@ -12,20 +12,23 @@ function ToDoForm({todos, setTodos}) {
 
     const submit = e => {
         e.preventDefault();
-        todos.push({
-            id: todos.length + 1,
-            text: input.value,
-            done: false,
-        });
-        setTodos(todos);
-        console.log(todos)
-        setInput('');
+        if (input !== '') {
+            const newTodos = [...todos, {
+                id: todos.length + 1,
+                text: input,
+                done: false,
+            }];
+            setTodos(newTodos);
+            setInput('');
+        } else {
+            alert("You haven't entered a task")
+        }
     }
 
     return (
-        <form className="to-do_form" onSubmit={submit}>
-            <Input class = "to-do_input" type = "text" placeholder = "Add new task" value = {input} setInput={change} />
-            <Button class= "to-do_btn" type = "submit" text = "+"/>
+        <form className="to-do__form" onSubmit={submit}>
+            <Input class="to-do__input" type="text" placeholder="Add new task" value={input} setInput={change} />
+            <Button class="to-do__btn" type="submit" text = "+"/>
         </form>
     );
 }

@@ -1,0 +1,11 @@
+.to-do__btn {
+    border: none;
+    color: white;
+    background-color: #1dd2af;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 10%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
