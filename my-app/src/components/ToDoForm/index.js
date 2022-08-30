@@ -6,10 +6,6 @@ import React, { useState } from "react";
 function ToDoForm({todos, setTodos}) {
     const [input, setInput] = useState('');
 
-    const change = e => {
-        setInput(e.target.value);
-    }
-
     const submit = e => {
         e.preventDefault();
         if (input !== '') {
@@ -27,7 +23,7 @@ function ToDoForm({todos, setTodos}) {
 
     return (
         <form className="to-do__form" onSubmit={submit}>
-            <Input class="to-do__input" type="text" placeholder="Add new task" value={input} setInput={change} />
+            <Input class="to-do__input" type="text" placeholder="Add new task" value={input} setInput={(e) => setInput(e.target.value)} />
             <Button class="to-do__btn" type="submit" text = "+"/>
         </form>
     );
