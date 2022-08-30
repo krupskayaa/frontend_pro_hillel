@@ -8,10 +8,6 @@ function CheckLogin({setLogin, setTodos}) {
 
     const [inputValue, setInputValue] = useState('');
 
-    const change = e => {
-        setInputValue(e.target.value);
-    }
-
     const submit = e => {
         e.preventDefault();
     
@@ -21,7 +17,7 @@ function CheckLogin({setLogin, setTodos}) {
 
     return (
         <form className="to-do__form-check" onSubmit={submit}>
-            <Input class="to-do__input-check" type="text" placeholder="Enter your login" value={inputValue} setInput={change}/>
+            <Input class="to-do__input-check" type="text" placeholder="Enter your login" value={inputValue} setInput={(e) => setInputValue(e.target.value)}/>
             <Button class="to-do__btn-check" type="submit" text="Continue"/>
         </form>
     );
