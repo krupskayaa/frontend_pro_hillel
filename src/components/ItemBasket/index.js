@@ -10,7 +10,6 @@ const ItemBasket = () => {
     const {basket, setBasket} = useContext(ContextBasket);
 
     useEffect(() => {
-        // console.log('tut')
         sessionStorage.setItem("items", JSON.stringify(basket));
     }, [basket]);
 

@@ -39,19 +39,21 @@ const Product = () => {
     return (
         <>
         <Header />
-        <div className="container">
-            <section className="product">
-                <div className="product__img-wrap">
-                    <img className="product__img" src={product.image}/>
-                </div>
-                <div className="product__info">
-                    <Title text={product.title}></Title>
-                    <p className="product__about">{product.description}</p>
-                    <p className="product__price">{product.price}$</p>
-                    <Button className="btn-green" text="Add to basket" onClick={addToBasket}></Button>
-                </div>
-            </section>
-        </div>
+        <main>
+            <div className="container">
+                <section className="product">
+                    <div className="product__img-wrap">
+                        <img className="product__img" src={product.image}/>
+                    </div>
+                    <div className="product__info">
+                        <Title text={product.title}></Title>
+                        <p className="product__about">{product.description}</p>
+                        <p className="product__price">{product.price}$</p>
+                        <Button className="btn-green" text="Add to basket" onClick={addToBasket}></Button>
+                    </div>
+                </section>
+            </div>
+        </main>
         <Footer />
         </>
     )
