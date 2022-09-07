@@ -1,0 +1,25 @@
+@import "../../styles/all.scss";
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    &__img {
+        width: 400px;
+    }
+    &__info {
+        max-width: 680px;
+    }
+    &__about {
+        font-size: 20px;
+        color: $colorBlackLight;
+        margin-bottom: 15px;
+    }
+    &__price {
+        font-size: 28px;
+        font-weight: 600;
+        color: $colorGreen;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,61 @@
+@import "../../styles/all.scss";
+
+.description {
+    position: relative;
+    margin-bottom: 47px;
+    &__slider-arrow {
+        cursor: pointer;
+        border: none;
+        background-color: $colorWhite;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 25px;
+            height: 50px;
+            path {
+                fill: $colorGreyLight;
+            }
+        }
+    }
+    &__wrap-text {
+        background-color: rgba(27, 25, 28, 0.5);
+        margin-bottom: 4px;
+        padding: 0 15px;
+    }
+    &__slider-item {
+        padding: 185px 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 55px;
+    }
+    &__txt1 {
+        font-size: 28px;
+        line-height: 1.79;
+        color: $colorWhite;
+        text-transform: uppercase;
+    }
+    &__txt2 {
+        font-size: 28px;
+        line-height: 1.79;
+        color: $colorWhite;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .slider-arrow-next {
+        right: 315px;
+    }
+    .slider-arrow-prev {
+        left: 315px;
+    }
+
+}

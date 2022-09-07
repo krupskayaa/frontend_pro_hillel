@@ -1,0 +1,15 @@
+@import "../../../styles/all.scss";
+
+.footer-bottom {
+    padding: 24px 0 27px 0;
+    background-color: $colorBlueDarkBg;
+    &__author, &__nav {
+        color: $colorBlueMiddleBg;
+        height: 13px;
+        line-height: 1.46;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

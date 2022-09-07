@@ -1,0 +1,107 @@
+@import "../../../styles/all.scss";
+
+.footer-middle {
+    background-color: $colorBlueMiddleBg;
+    padding: 51px 0 29px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-wrapper {
+        max-width: 231px;
+        border-bottom: 1px solid $colorBlueBg;
+        border-top: 1px solid $colorBlueBg;
+        padding: 7px 0 1px 0;
+        margin-bottom: 9px;
+    }
+    &__facebook-members {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.54;
+        color: $colorWhite;
+    }
+    &__facebook-txt {
+        font-size: 13px;
+        line-height: 1.54;
+        color: $colorWhite;
+    }
+    &__img {
+        margin-bottom: 9px;
+        &:not(:nth-child(4n+4)) {
+            margin-right: 11px;
+        }
+    }
+    &__btn-like {
+        border: none;
+        display: flex;
+        border-radius: 6px;
+        margin-bottom: 5px;
+    }
+    &__title {
+        font-size: 20px;
+        color: $colorGreyLightFooter;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    &__wrap-img {
+        width: 43px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorWhite;
+        border-radius: 50%;
+        margin-right: 13px;
+    }
+    &__twitter {
+        max-width: 221px;
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 26px;
+        }
+        &-txt {
+            color: $colorWhite;
+            font-size: 13px;
+            line-height: 1.46;
+            max-width: 165px;
+        }
+    }
+    &__information-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    &__text-info {
+        color: $colorWhite;
+        font-size: 13px;
+        line-height: 1.85;
+        margin-left: 11px;
+    }
+    &__arrow path {
+        fill: $colorWhite;
+    }
+    &__text {
+        color: $colorWhite;
+        font-size: 13px;
+        line-height: 1.85;
+        margin-bottom: 5px;
+    }
+    &__social-networks {
+        border-top: 1px solid $colorBlueBg;
+        padding-top: 18px;
+        display: flex;
+        margin-top: 15px;
+        &-link {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: $colorWhite;
+            margin-right: 10px;
+        }
+    }
+}

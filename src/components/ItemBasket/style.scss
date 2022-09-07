@@ -1,0 +1,55 @@
+@import "../../styles/all.scss";
+
+.basket {
+    margin-bottom: 45px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F3F4F7;
+        padding: 10px 0;
+        &-image {
+            width: 110px;
+            margin-right: 15px;
+        }
+        &-title {
+            font-size: 20px;
+            line-height: 130%;
+            color: $colorBlackLight;
+            font-weight: 600;
+        }
+        &-description {
+            font-size: 16px;
+            line-height: 130%;
+            color: $colorGreyText;
+            margin-top: 7px;
+        }
+        &-price {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.05em;
+            color: $colorBlackLight;
+            width: 100px;
+        }
+        &-info {
+            width: 680px;
+        }
+        &-count {
+            margin: 0 15px;
+        }
+    }
+    &__all {
+        text-align: right;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 15px 0;
+        color: $colorBlackLight;
+    }
+    .counter {
+        width: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

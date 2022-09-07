@@ -1,0 +1,71 @@
+@import "../../styles/all.scss";
+
+.middle-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+    align-items: center;
+    &__logo-link {
+        color: $colorGreyText;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin: 0 10px;
+    }
+    &__nav {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $colorGreyText;
+    }
+    &__wrap-input {
+        position: relative;
+    }
+    &__input {
+        margin-right: 12px;
+    }
+    &__input-icon {
+        position: absolute;
+        right: 23px;
+        top: 11px;
+        path {
+            fill: $colorGreyText;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__items {
+        margin: 0 2px 0 2px;
+        border-radius: 50%;
+        background-color: $colorGreen;
+        border: none;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            width: 20px;
+            height: 17px;
+        }
+        path {
+            fill: $colorWhite;
+        }
+    }
+    &__counter {
+        padding-left: 4px;
+        color: $colorGreyText;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: normal;
+        font-size: 14px;
+    }
+}

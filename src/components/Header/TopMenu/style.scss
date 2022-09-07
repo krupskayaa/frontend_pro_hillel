@@ -1,0 +1,24 @@
+@import "../../../styles/all.scss";
+
+.top-menu {
+    padding: 15px 0 15px 0;
+    background-color: $colorBlueBg;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrap-opt {
+        display: flex;
+    }
+    &__top-nav {
+        display: flex;
+    }
+    &__nav {
+        color: $colorWhite;
+        font-size: 13px;
+    }
+    &__item {
+        margin-left: 15px;
+    }
+}

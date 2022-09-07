@@ -1,0 +1,31 @@
+@import "../../../styles/all.scss";
+
+.footer-top {
+    background-color: $colorBlueBg;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &-txt {
+            font-size: 21px;
+            color: $colorWhite;
+            text-transform: uppercase;
+        }
+    }
+    &__icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        background-color: $colorWhite;
+        color: $colorBlueMiddleBg;
+    }
+}

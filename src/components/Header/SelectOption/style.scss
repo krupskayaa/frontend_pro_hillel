@@ -1,0 +1,20 @@
+@import "../../../styles/all.scss";
+
+.select {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    &__opt {
+        border: none;
+        background: none;
+        color: $colorWhite;
+    }
+    &__label {
+        color: $colorBlueTxt;
+        padding-right: 4px;
+        font-size: 13px;
+    }
+}

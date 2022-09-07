@@ -1,0 +1,36 @@
+@import "../../styles/all.scss";
+
+.catalog {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    &__wrap-img {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__image {
+        max-width: 200px;
+        max-height: 225px;
+    }
+    &__item-title {
+        font-size: 14px;
+        line-height: 1.57;
+        font-weight: 600;
+        color: $colorBlackLight;
+        cursor: pointer;
+    }
+    &__price {
+        color: $colorGreen;
+        font-size: 18px;
+    }
+}
