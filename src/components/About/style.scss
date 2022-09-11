@@ -1,0 +1,46 @@
+@import "../../styles/all.scss";
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 50px 0;
+    &__info {
+        max-width: 540px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+        color: $colorGreyText;
+        margin: 15px 0 20px 0;
+    }
+    &__txt-title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 29px;
+        letter-spacing: 0.02em;
+        color: $colorRed;
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 165%;
+        color: $colorGreyText;
+        margin-bottom: 30px;
+    }
+    &__author-info {
+        display: flex;
+    }
+    &__time {
+        font-size: 13px;
+        line-height: 165%;
+        color: $colorGreyText;
+        margin-right: 9px;
+    }
+    &__author {
+        font-size: 13px;
+        line-height: 165%;
+        color: $colorGreyText;
+        opacity: 0.7;
+    }
+}

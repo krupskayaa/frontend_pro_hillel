@@ -1,0 +1,17 @@
+@import "../../styles/all.scss";
+
+.news {
+    padding: 55px 0;
+    &__title-main {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 27px;
+        color: $colorGreyText;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

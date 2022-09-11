@@ -1,0 +1,12 @@
+@import "../../styles/all.scss";
+
+.input {
+    width: 330px;
+    padding: 16px 23px 18px 23px;
+    border: 1px solid $colorDarkGrey;
+    border-radius: 2px;
+    color: $colorDarkGrey;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+}

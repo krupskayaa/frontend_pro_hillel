@@ -1,0 +1,33 @@
+@import "../../styles/all.scss";
+
+.footer {
+    padding: 79px 0 54px 0;
+    background-color: $colorBlue;
+    &__author {
+        font-size: 12px;
+        line-height: 25px;    
+        letter-spacing: 0.02em;  
+        color: $colorWhite;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 14vh;
+        align-items: center;
+    }
+    &__item-link {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        color: $colorWhite;
+    }
+    &__social-networks-link {
+        margin-left: 10px;
+    }
+}

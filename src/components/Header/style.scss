@@ -1,0 +1,24 @@
+@import "../../styles/all.scss";
+
+.header {
+    background-color: $gradientWhiteHeader;
+    padding: 14px 0;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        &-list {
+            display: flex;
+        }
+    }
+    &__list-link {
+        margin-left: 10px;
+    }
+    &__link {
+        color: $colorGreyText;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

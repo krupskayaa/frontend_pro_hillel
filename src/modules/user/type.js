@@ -1,0 +1,4 @@
+const SET_LOGIN = "SET_LOGIN";
+const USER_INFO = "USER_INFO";
+
+export {SET_LOGIN, USER_INFO};

@@ -1,0 +1,43 @@
+@import "../../../styles/all.scss";
+
+.news {
+    &__item {
+        background-color: $colorWhite;
+        max-width: 420px;
+    }
+    &__img {
+        max-width: 420px;
+    }
+    &__info {
+        padding: 15px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $colorGreyText;
+        margin-bottom: 17px;
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 22px;
+        color: $colorGreyText;
+        height: 88px;
+        margin-bottom: 30px;
+    }
+    &__info-author {
+        display: flex;
+    }
+    &__time {
+        margin-right: 9px;
+        font-size: 13px;
+        line-height: 165%;
+        color: $colorGreyText;
+    }
+    &__author {
+        font-size: 13px;
+        line-height: 165%;
+        color: $colorGreyText;
+        opacity: 0.7;
+    }
+}

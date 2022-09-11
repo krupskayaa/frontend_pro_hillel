@@ -1,0 +1,25 @@
+@import "../../styles/all.scss";
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    height: 60vh;
+    &__info {
+        margin-left: 30px;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+        color: $colorGreyText;
+    }
+    &__country, &__likes {
+        font-size: 17px;
+        line-height: 165%;
+        color: $colorGreyText;
+    }
+    &__country {
+        margin-bottom: 3px;
+    }
+}
