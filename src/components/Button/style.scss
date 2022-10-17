@@ -1,13 +1,14 @@
 @import "../../styles/all.scss";
 
-.btn-red {
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    color: $colorRed;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
-    border: 1px solid $colorRed;
-    border-radius: 2px;
-    padding: 23px 63px;
+.btn-pink {
+    background-color: $colorPink;
+    border-radius: 100px;
+    padding: 20px 54px;
+    color: $colorWhite;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    border: none;
 }

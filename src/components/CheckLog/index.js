@@ -27,7 +27,6 @@ const CheckLog = () => {
                 payload: login
             });
             actualPath("/profile");
-            
         } else {
             setUserInfo(true);
         }

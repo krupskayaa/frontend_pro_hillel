@@ -1,46 +1,72 @@
 @import "../../styles/all.scss";
 
 .about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 0 50px 0;
+    position: relative;
+    padding: 90px 0 140px 0;
     &__info {
-        max-width: 540px;
+        max-width: 909px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @keyframes spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+    }
+    &__figure {
+        animation: spin 7s linear 0s infinite;
+        position: absolute;
+    }
+    .figure-1 {
+        left: 115px;
+        top: 155px;
+        width: 225px;
+    }
+    .figure-2 {
+        left: 81px;
+        top: 149px;
+    }
+    .figure-right-1, .figure-right-2 {
+        right: 84px;
+        top: 241px;
+        width: 300px;
     }
     &__title {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 42px;
-        color: $colorGreyText;
-        margin: 15px 0 20px 0;
-    }
-    &__txt-title {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 29px;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 89px;
+        text-align: center;
         letter-spacing: 0.02em;
-        color: $colorRed;
+        color: $colorWhite;
     }
-    &__description {
-        font-size: 15px;
-        line-height: 165%;
-        color: $colorGreyText;
-        margin-bottom: 30px;
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 160%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $colorWhite;
+        margin-top: 20px;
     }
-    &__author-info {
+    &__btn {
         display: flex;
-    }
-    &__time {
-        font-size: 13px;
-        line-height: 165%;
-        color: $colorGreyText;
-        margin-right: 9px;
-    }
-    &__author {
-        font-size: 13px;
-        line-height: 165%;
-        color: $colorGreyText;
-        opacity: 0.7;
+        align-items: center;
+        margin-top: 60px;
+        &::after {
+            content: "";
+            background-image: url("../../assets/arrow_btn.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 22px;
+            height: 12px;
+            margin-left: 10px;
+        }
+        &:hover {
+            background: linear-gradient(to top, $colorViolet, $colorPink);
+            box-shadow: 1px 2px 13px 4px $colorPink;
+            transition: all 0.4s ease;
+        }
     }
 }

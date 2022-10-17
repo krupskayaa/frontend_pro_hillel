@@ -1,5 +1,5 @@
 import "./style.scss";
-import logo from "assets/logo_header.png";
+import logo from "assets/logo.svg";
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 

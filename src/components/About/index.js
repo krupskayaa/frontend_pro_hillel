@@ -1,24 +1,25 @@
 import "./style.scss";
-import main from "assets/main_lemon.jpg";
+import figure_2 from "assets/figure_2.svg";
+import figure_1 from "assets/figure_1.svg";
+import figure_right_1 from "assets/figure_right_1.svg";
+import figure_right_2 from "assets/figure_right_2.svg";
+import Button from "../Button"
 
 const About = () => {
     return (
-        <div className="container">
-            <section className="about">
-                <div className="about__image">
-                    <img className="catalog__image" src={main}/>
-                </div>
+        <section className="about">
+            <img className="about__figure figure-2" src={figure_2}/>
+            <img className="about__figure figure-1" src={figure_1}/> 
+            <div className="container">
                 <div className="about__info">
-                    <p className="about__txt-title">Trending</p>
-                    <h2 className="about__title">Cake meme reflects coronavirus absurdity in a world where nothing is what it seems</h2>
-                    <p className="about__description">Earlier this month, a viral video depicting hyper-realistic cakes as everyday items had folks on social media double-guessing every other post, and sometimes even their own realities, effectively launching the next meme : “Is this real or is this cake?”</p>
-                    <div className="about__author-info">
-                        <p className="about__time">2 hours ago</p>
-                        <p className="about__author">By Lucy Hiddleston</p>
-                    </div>
+                    <h2 className="about__title">Take Full Control Of Your Personal Finances</h2>
+                    <p className="about__text">Manage and Visualize your everyday finances with features you will love to use.</p>
+                    <Button className="about__btn btn-pink" type="button" text="Try For Free"/>
                 </div>
-            </section>
-        </div>
+            </div>
+            <img className="about__figure figure-right-1" src={figure_right_1}/>
+            <img className="about__figure figure-right-2" src={figure_right_2}/>
+        </section>
     )
 }
 

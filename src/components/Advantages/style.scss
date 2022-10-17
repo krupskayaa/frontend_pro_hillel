@@ -1,0 +1,129 @@
+@import "../../styles/all.scss";
+
+.advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 122px;
+    }
+    &__proposal {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+    &__col {
+        margin-bottom: 59px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: $colorWhite;
+        margin-bottom: 20px;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 120%;
+        color: $colorWhite;
+    }
+    &__img {
+        width: 550px;
+    }
+    // .proposal-tracking::before {
+    //     content: "";
+    //     width: 318px;
+    //     height: 318px;
+    //     background-image: url(../../assets/tracking_expenses.png);
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    // }
+    // .proposal-setting::before {
+    //     content: "";
+    //     width: 273px;
+    //     height: 273px;
+    //     background-image: url(../../assets/finance_goals.png);
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    // }
+    // .proposal-analytics::before {
+    //     content: "";
+    //     width: 323px;
+    //     height: 323px;
+    //     background-image: url(../../assets/analytics.png);
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    // }
+    // &__info {
+    //     max-width: 909px;
+    //     margin: 0 auto;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    // @keyframes spin {
+    //     from {transform:rotate(0deg);}
+    //     to {transform:rotate(360deg);}
+    // }
+    // &__figure {
+    //     animation: spin 7s linear 0s infinite;
+    //     position: absolute;
+    // }
+    // .figure-1 {
+    //     left: 115px;
+    //     top: 155px;
+    //     width: 225px;
+    // }
+    // .figure-2 {
+    //     left: 81px;
+    //     top: 149px;
+    // }
+    // .figure-right-1, .figure-right-2 {
+    //     right: 84px;
+    //     top: 241px;
+    //     width: 300px;
+    // }
+    // &__title {
+    //     font-weight: 700;
+    //     font-size: 72px;
+    //     line-height: 89px;
+    //     text-align: center;
+    //     letter-spacing: 0.02em;
+    //     color: $colorWhite;
+    // }
+    // &__text {
+    //     font-weight: 300;
+    //     font-size: 24px;
+    //     line-height: 160%;
+    //     text-align: center;
+    //     letter-spacing: 0.01em;
+    //     color: $colorWhite;
+    //     margin-top: 20px;
+    // }
+    // &__btn {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-top: 60px;
+    //     &::after {
+    //         content: "";
+    //         background-image: url("../../assets/arrow_btn.svg");
+    //         background-repeat: no-repeat;
+    //         background-position: center center;
+    //         background-size: cover;
+    //         width: 22px;
+    //         height: 12px;
+    //         margin-left: 10px;
+    //     }
+    //     &:hover {
+    //         background: linear-gradient(to top, $colorViolet, $colorPink);
+    //         box-shadow: 1px 2px 13px 4px $colorPink;
+    //         transition: all 0.4s ease;
+    //     }
+    // }
+}

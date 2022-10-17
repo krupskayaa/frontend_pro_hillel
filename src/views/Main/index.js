@@ -1,16 +1,17 @@
 import Header from "components/Header";
-import About from "../../components/About";
-import Footer from "../../components/Footer";
+import About from "components/About";
+import Advantages from "components/Advantages";
+import Footer from "components/Footer";
 
 const Main = () => {
     return (
-        <>
-        <Header />
-        <main>
-            <About />
-        </main>
-        <Footer />
-        </>
+        <div className="background">
+            <Header />
+            <main>
+                <About />
+                <Advantages />
+            </main>
+        </div>
     )
 };
 
